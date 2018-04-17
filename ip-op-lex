@@ -1,0 +1,19 @@
+LEX
+lex filename.l
+gcc lex.yy.c
+./a.out inputfile
+
+
+YACC
+lex filename.l
+yacc -d filenamet.y
+gcc lex.yy.c y.tab.c
+./a.out inputfile
+
+Output:
+int a; float b;
+int is a KEYWORD
+Identifier is a;
+float is KEYWORD
+Identifier is b;
+
